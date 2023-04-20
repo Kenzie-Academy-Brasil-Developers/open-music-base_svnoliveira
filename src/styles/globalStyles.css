@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --color-brand-1:#9747ff;
   --color-grey-0: #15171a;
@@ -31,11 +25,34 @@
   --container: 45rem;
 }
 
+.text--tittle {
+  font: normal normal 600 var(--font-1) 'Inter';
+}
+
+.text--normal {
+  font: normal normal 600 var(--font-2) 'Inter';
+}
+
+.text--light {
+  font: normal normal 500 var(--font-2) 'Inter';
+  color: var(--color-grey-2);
+}
+
+.text--small {
+  font: normal normal 500 var(--font-3) 'Inter';
+  color: var(--color-grey-2);
+}
+
+html {
+  background-color: var(--color-grey-9);
+  color: var(--color-grey-1);
+}
+
+
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-grey-9);
 }
 
 .container {
@@ -43,4 +60,46 @@ body {
   max-width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+/* ----------------dark mode classes --------------------- */
+
+.dark-mode {
+  background-color: var(--color-grey-0);
+  color: var(--color-grey-8);
+}
+
+.dark-mode__background--grey1, #top > .dark-mode__background--grey1{
+  background-color: var(--color-grey-1);
+}
+
+.display__price-container > .dark-mode__background--grey2 {
+  background-color: var(--color-grey-2);
+}
+
+.dark-mode__text--grey5 {
+  color: var(--color-grey-5); 
+}
+
+.dark-mode__text--grey5:hover {
+  color: var(--color-grey-9);
+}
+
+.dark-mode__text--grey4 {
+  color: var(--color-grey-4); 
+}
+
+.dark-mode__text--grey3 {
+  color: var(--color-grey-3); 
+}
+
+#genre-filter > ul > .dark-mode__filter-button{
+  background-color: var(--color-grey-1);
+  border: solid 2px var(--color-grey-1);
+  color: var(--color-grey-3);
+}
+
+#genre-filter > ul > .dark-mode__selected, #genre-filter > ul > .dark-mode__filter-button:hover {
+  color: var(--color-grey-9);
+  border: solid 2px var(--color-grey-9);
 }

@@ -1,1 +1,90 @@
-/* Desenvolva sua estilização aqui ... */
+#top {
+    padding: 10vh 1rem 7vh 1rem;
+}
+
+#top, #price-filter > header, #album-display > ul, .display__price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#top > img {
+    background-color: var(--color-grey-8);
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+
+main > h2 {
+    margin-bottom: 3vh;
+}
+
+#genre-filter > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+}
+
+#genre-filter > ul > .filter__selected, #genre-filter > ul > li:hover {
+    color: var(--color-grey-8);
+    background-color: var(--color-grey-1);
+    border: solid 2px var(--color-grey-1);
+}
+
+#genre-filter > ul > li{
+    padding: 0.5rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-8);
+    border: solid 2px var(--color-grey-8);
+    cursor: pointer;
+}
+
+
+#price-filter {
+    margin-bottom: 6vh;
+}
+
+#price-filter > header {
+    padding: 9vh 0 6vh 0;
+}
+
+#album-display > ul {
+    flex-wrap: wrap;
+    gap: 2.375rem;
+}
+
+#album-display > ul > li{
+    background-color: var(--color-grey-8);
+    max-width: 50%;
+    width: 20.3rem;
+    height: 17rem;
+    border-radius: var(--radius-1);
+    display: flex;
+    flex-direction: column;
+}
+
+#album-display > ul > li > img{
+    object-fit: cover;
+    max-height: 45%;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0px 0px;
+}
+
+.display__album-card > div {
+    padding: 1.25rem 0.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display__price-container > button {
+    border: none;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-7);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+

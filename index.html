@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark-mode"> 
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/slider.css">
     <script type="module" src="./src/scripts/index.js" defer></script>
     <title>Open Music</title>
   </head>
   <body>
-    <header class="container">
-      <h1>open Music</h1>
-      <img src="" alt="moon">
+    <header id="top" class="container">
+      <h1 class="text--tittle">open music</h1>
+      <img src="./src/assets/img/moon.svg" alt="moon" class="dark-mode__background--grey1">
     </header>
     <main class="container">
-      <h2>Gênero Musical</h2>
+      <h2 class="text--normal dark-mode__text--grey4">Gênero Musical</h2>
       <nav id="genre-filter">
         <ul>
-          <li>Todos</li>
-          <li>Pop</li>
-          <li>MPB</li>
+          <li class="text--light dark-mode__filter-button">Todos</li>
+          <li class="text--light dark-mode__selected dark-mode__filter-button">Pop</li>
+          <li class="text--light dark-mode__filter-button">MPB</li>
         </ul>
       </nav>
       <section id="price-filter">
         <header>
-          <h2>Definir Preço</h2>
-          <h2>Até R$ 00,00</h2>
+          <h2 class="text--normal dark-mode__text--grey4">Definir Preço</h2>
+          <h2 class="text--light dark-mode__text--grey3">Até R$ 00,00</h2>
         </header>
-        <input type="slider">
+        <input type="range" min="1" max="100" value="50">
       </section>
-      <h2>Albums Encontrados</h2>
+      <h2 class="text--normal dark-mode__text--grey4">Albums Encontrados</h2>
       <section id="album-display">
         <ul>
           <li class="display__album-card">
-            <img src="" alt="album Image">
-            <div class="display__information-container">
-              <span>scalene</span>
-              <span>2017</span>
-            </div>
-            <h2>Magnetite</h2>
-            <div class="display__price-container">
-              <span>R$ 00,00</span>
-              <button>Comprar</button>
+            <img src="./src/assets/img/1.jpg" alt="album Image">
+            <div class="dark-mode__background--grey1">
+              <div class="display__information-container">
+                <span class="text--small dark-mode__text--grey3">scalene</span>
+                <span class="text--small dark-mode__text--grey3">2017</span>
+              </div>
+              <h2 class="text--normal">Magnetite</h2>
+              <div class="display__price-container">
+                <span class="text--normal">R$ 00,00</span>
+                <button class="text--light dark-mode__background--grey2 dark-mode__text--grey5">Comprar</button>
+              </div>
             </div>
           </li>
         </ul>

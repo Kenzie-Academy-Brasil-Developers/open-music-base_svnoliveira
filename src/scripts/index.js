@@ -1,1 +1,2 @@
-/* Desenvolva sua lógica aqui ... */
+import { products, categories } from "./productsData.js";
+

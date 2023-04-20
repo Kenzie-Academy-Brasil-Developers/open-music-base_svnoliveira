@@ -1,0 +1,10 @@
+body, header, h1, img, main, h2, nav, ul, li, section, input, span, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
