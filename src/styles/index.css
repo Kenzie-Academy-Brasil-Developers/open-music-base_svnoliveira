@@ -57,13 +57,13 @@ main > h2 {
 }
 
 #album-display > ul > li{
-    background-color: var(--color-grey-8);
     max-width: 50%;
     width: 20.3rem;
     height: 17rem;
     border-radius: var(--radius-1);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #album-display > ul > li > img{
@@ -71,14 +71,25 @@ main > h2 {
     max-height: 45%;
     width: 100%;
     border-radius: 0.25rem 0.25rem 0px 0px;
+    transition: transform .2s;
+}
+
+#album-display > ul > li > img:hover{
+    transform: scale(1.2);
 }
 
 .display__album-card > div {
+    background-color: var(--color-grey-8);
     padding: 1.25rem 0.75rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 0px 0px 0.25rem 0.25rem;
+}
+
+.display__album-card > div:hover {
+    background-color: var(--color-grey-7);
 }
 
 .display__information-container > span {
@@ -93,3 +104,6 @@ main > h2 {
     padding: 0.5rem;
 }
 
+.display__price-container > button:hover {
+    background-color: var(--color-grey-6);
+}
